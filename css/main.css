@@ -60,21 +60,26 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 3%;
 }
 .dogphoto{
+    flex-grow:1;
+}
+.dogphoto img{
     width: 100%;
-    max-width: 100%;
-    height: auto !important;
+    height: auto;
 }
 .main-content h1{
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 3em;
     font-weight: 300;
     color:#6603BE;
-    padding-right: 20%;
+    padding-right: 10%;
 }
 .main-content h1 span{
     color:#5BBE03;
+}
+.main-text{
+    flex-grow:1;
 }
 .main-text-buttons{
     display: flex;
@@ -106,82 +111,26 @@ footer{
     width: 100%;
     background-color: #5BBE03;
 }
-@media  (max-width: 900px){
-    .main-content h1{
-        font-size: 36px;
-    }
-    .dogphoto{
-        height: 400px;
-        width: 400px;
-    }
-}
-@media only screen and (max-width: 825px){
-    .main-content h1{
-        font-size: 28px;
-    }
-    .dogphoto{
-        height: 350px;
-        width: 350px;
-    }
-}
-@media (max-width: 650px){
-    .main-content h1{
-        font-size: 24px;
-    }
-    .dogphoto{
-        height: 300px;
-        width: 300px;
-    }
-}
-@media (max-width: 575px){
-    .main-content h1{
-        font-size: 20px;
-    }
-    .dogphoto{
-        height: 250px;
-        width: 250px;
-    }
+@media (max-width: 620px){
     .header-list ul li a{
+        font-size: .7em;
+    }
+    .main-content h1{
+        font-size: 1.5em;
+    }
+    .main-content div button{
+        width: 70px;
+        font-size: 1em;
+    }
+    .search-bar input{
         font-size: 12px;
     }
 }
-@media (max-width: 525px){
-    .main-content h1{
-        font-size: 20px;
-        padding-top: 20px;
-    }
-    .dogphoto{
-        height: 200px;
-        width: 200px;
-    }
+@media (max-width: 460px){
     .header-list ul li a{
-        font-size: 8px;
+        font-size: .1em;
     }
-}
-@media (max-width: 450px){
-    .main-content h1{
-        font-size: 20px;
-        padding-top: 20px;
-    }
-    .dogphoto{
-        height: 100px;
-        width: 100px;
-    }
-    .header-list ul li a{
-        font-size: 8px;
-    }
-}
-@media (max-width: 380px){
-    .main-content h1{
-        font-size: 20px;
-        padding-top: 20px;
-        padding-right: 10%;
-    }
-    .dogphoto{
-        height: 70px;
-        width: 70px;
-    }
-    .header-list ul li a{
-        font-size: 6px;
+    .header-list ul li{
+        padding: 0 2% 0 0;
     }
 }
