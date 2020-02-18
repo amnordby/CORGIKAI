@@ -1,0 +1,187 @@
+*{
+    margin:0;
+}
+body{
+    position: absolute;
+    margin: 0px;
+    overflow: hidden;
+    top: 0px;
+    bottom: 0px; 
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#6603BE;
+    height: 60px;
+    width: 100%;
+    padding:0;
+}
+header img{
+    height: 120%;
+    margin-top: 0px;
+}
+.header-list ul{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 2%;
+    align-items: center;
+    flex-flow: nowrap;
+}
+.header-list ul li{
+    padding: 0 10px;
+    list-style: none;
+}
+.header-list ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.header-list ul li a:hover{
+    color: yellow;
+}
+.search-bar{
+    display: flex;
+    justify-content: flex-end;
+    padding-top:10px;
+    padding-right: 10px;
+}
+.search-bar input{
+    width: 200px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.search-bar i{
+    position: relative;
+    right: 20px;
+    top: 4px;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dogphoto{
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+}
+.main-content h1{
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 300;
+    color:#6603BE;
+    padding-right: 20%;
+}
+.main-content h1 span{
+    color:#5BBE03;
+}
+.main-text-buttons{
+    display: flex;
+    padding-right: 20%;
+    justify-content: center;
+    padding-top: 20px;
+}
+.main-content div button{
+    width: 100px;
+    color: #fff;
+    font-size: 22px;
+}
+.main-content div button:hover{
+    cursor: pointer;
+    color: yellow;
+    box-shadow: 3px 2px 5px gray;
+}
+.main-content div button:first-child{
+    background-color:#6603BE;
+    margin-right: 10%;
+}
+.main-content div button:last-child{
+    background-color:#5BBE03 ;
+}
+footer{
+    height: 60px;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    background-color: #5BBE03;
+}
+@media  (max-width: 900px){
+    .main-content h1{
+        font-size: 36px;
+    }
+    .dogphoto{
+        height: 400px;
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 825px){
+    .main-content h1{
+        font-size: 28px;
+    }
+    .dogphoto{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 650px){
+    .main-content h1{
+        font-size: 24px;
+    }
+    .dogphoto{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media (max-width: 575px){
+    .main-content h1{
+        font-size: 20px;
+    }
+    .dogphoto{
+        height: 250px;
+        width: 250px;
+    }
+    .header-list ul li a{
+        font-size: 12px;
+    }
+}
+@media (max-width: 525px){
+    .main-content h1{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .dogphoto{
+        height: 200px;
+        width: 200px;
+    }
+    .header-list ul li a{
+        font-size: 8px;
+    }
+}
+@media (max-width: 450px){
+    .main-content h1{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .dogphoto{
+        height: 100px;
+        width: 100px;
+    }
+    .header-list ul li a{
+        font-size: 8px;
+    }
+}
+@media (max-width: 380px){
+    .main-content h1{
+        font-size: 20px;
+        padding-top: 20px;
+        padding-right: 10%;
+    }
+    .dogphoto{
+        height: 70px;
+        width: 70px;
+    }
+    .header-list ul li a{
+        font-size: 6px;
+    }
+}
